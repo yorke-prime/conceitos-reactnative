@@ -50,7 +50,7 @@ export default function App() {
           <Text style={styles.repository}>{repository.title}</Text>
 
           <View style={styles.techsContainer}>
-            {repository.techs.map((tech, index) =><Text key={index} style={styles.tech}>
+            {repository.techs.map(tech =><Text key={tech} style={styles.tech}>
               {tech}
             </Text> )}
           </View>
@@ -61,7 +61,7 @@ export default function App() {
               // Remember to replace "1" below with repository ID: {`repository-likes-${repository.id}`}
               testID={`repository-likes-${repository.id}`}
             >
-              {repository.likes}
+              {repository.likes} curtidas
             </Text>
           </View>
 
